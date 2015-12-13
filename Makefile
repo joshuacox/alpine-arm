@@ -5,9 +5,9 @@ tag:
 	docker tag mini-base mini/base
 
 clean:
-	-rm root.tar.gz
+	-rm rootfs.tar.gz
 
-root.tar.gz:
+rootfs.tar.gz:
 	cd rootfs; make build
 
-fresh: clean root.tar.gz build
+fresh: clean rootfs.tar.gz build
