@@ -1,1 +1,1 @@
-joshuacox/alpine-arm
+joshuacox/local-alpine

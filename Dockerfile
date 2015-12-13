@@ -1,5 +1,5 @@
 FROM       scratch
-MAINTAINER Luis Lavena <luislavena@gmail.com>
+MAINTAINER Joshua Cox <josh@webhosting.coop>
 
 ADD ./rootfs.tar.xz /
 
