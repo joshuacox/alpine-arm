@@ -1,8 +1,8 @@
 build: Dockerfile
-	docker build -t mini-base .
+	docker build -t `cat NAME` .
 
 tag:
-	docker tag mini-base mini/base
+	docker tag `cat NAME` `cat TAG`
 
 clean:
 	-rm rootfs.tar.xz
@@ -10,4 +10,4 @@ clean:
 rootfs.tar.xz:
 	cd rootfs; make build
 
-fresh: clean rootfs.tar.xz build
+fresh: clean rootfs.tar.xz build tag
